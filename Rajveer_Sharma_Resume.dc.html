@@ -1,106 +1,222 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rajveer Sharma — Resume</title>
 <script src="./support.js"></script>
 </head>
 <body>
 <x-dc>
 
 <helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap">
   <style>
     body{margin:0}
+    *{-webkit-print-color-adjust:exact; print-color-adjust:exact; box-sizing:border-box}
     h1,h2,h3{text-wrap:balance}
     p,li{text-wrap:pretty}
+    .job ul{margin:6px 0 0 0; padding-left:16px}
+    .job li{margin:0 0 3px 0; padding-left:2px}
+    .job li::marker{color:oklch(0.52 0.17 288)}
+    .contact a{color:inherit; text-decoration:none}
   </style>
   <script src="./doc-page.js"></script>
 </helmet>
-<doc-page size="letter" margin="0.6in" style="font-family: Helvetica, Arial, sans-serif; color: oklch(0.24 0.01 260); font-size: 14px; line-height: 1.55;">
+<doc-page size="letter" orientation="portrait" margin="0" style="font-family: 'Inter', Helvetica, Arial, sans-serif; color: oklch(0.25 0.02 275); font-size: 13px; line-height: 1.5;">
 
-  <div style="display:flex; justify-content:space-between; align-items:flex-end; border-bottom: 2px solid oklch(0.5 0.13 250); padding-bottom: 14px; margin-bottom: 20px;">
-    <div>
-      <h1 style="margin:0; font-size: 34px; letter-spacing: 0.5px; font-weight: 700;">Rajveer Sharma</h1>
-      <div style="font-size: 16px; color: oklch(0.5 0.13 250); font-weight: 600; margin-top: 4px;">Software Engineer</div>
+<div style="display:flex; flex-direction:column; min-height:1052px;">
+
+  <!-- ============ HEADER ============ -->
+  <header style="background: oklch(0.23 0.045 278); color: #ffffff; padding: 36px 48px 28px 48px; border-bottom: 5px solid oklch(0.52 0.17 288);">
+    <div style="display:flex; justify-content:space-between; align-items:center; gap:24px;">
+      <div style="display:flex; align-items:center; gap:18px;">
+        <div aria-hidden="true" style="width:58px; height:58px; flex:none; border-radius:12px; background: oklch(0.52 0.17 288); display:flex; align-items:center; justify-content:center; font-family:'Space Grotesk', 'Helvetica Neue', Arial, sans-serif; font-weight:700; font-size:22px; letter-spacing:0.5px; color:#ffffff;">RS</div>
+        <div>
+          <h1 style="margin:0; font-family:'Space Grotesk', 'Helvetica Neue', Arial, sans-serif; font-size: 36px; line-height:1.05; letter-spacing: -0.3px; font-weight: 700;">Rajveer Sharma</h1>
+          <div style="font-size: 14px; color: oklch(0.83 0.09 290); font-weight: 600; margin-top: 5px; letter-spacing: 1.8px; text-transform: uppercase;">Software Engineer</div>
+        </div>
+      </div>
+      <div class="contact" style="display:flex; flex-direction:column; gap:5px; font-size: 12.5px; color: oklch(0.9 0.012 280);">
+        <div style="display:flex; align-items:center; gap:8px;">
+          <svg aria-hidden="true" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="oklch(0.83 0.09 290)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg>
+          <span>Bengaluru, India 560078</span>
+        </div>
+        <div style="display:flex; align-items:center; gap:8px;">
+          <svg aria-hidden="true" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="oklch(0.83 0.09 290)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"></path></svg>
+          <a href="tel:+918437301305">8437301305</a>
+        </div>
+        <div style="display:flex; align-items:center; gap:8px;">
+          <svg aria-hidden="true" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="oklch(0.83 0.09 290)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg>
+          <a href="mailto:rajveersharma25158@gmail.com">rajveersharma25158@gmail.com</a>
+        </div>
+      </div>
     </div>
-    <div style="text-align:right; font-size: 13px; line-height: 1.7;">
-      <div>Bengaluru, India 560078</div>
-      <div>8437301305</div>
-      <div>rajveersharma25158@gmail.com</div>
-    </div>
+    <p style="margin: 20px 0 0 0; padding-top: 16px; border-top: 1px solid oklch(0.36 0.05 280); font-size: 13.5px; line-height: 1.6; color: oklch(0.88 0.014 280);">Backend-focused software engineer with 8+ years building and scaling .NET systems, from designing microservices and workflow automation to driving performance and test coverage improvements. Comfortable owning problems end-to-end under tight deadlines and collaborating closely with cross-functional teams.</p>
+  </header>
+
+  <!-- ============ BODY ============ -->
+  <div style="display:flex; flex:1;">
+
+    <!-- ---------- SIDEBAR ---------- -->
+    <aside style="width:240px; flex:none; background: oklch(0.965 0.012 288); padding: 28px 24px; display:flex; flex-direction:column; gap:28px;">
+
+      <section>
+        <h2 style="font-size: 12px; text-transform: uppercase; letter-spacing: 1.6px; color: oklch(0.45 0.17 288); margin: 0 0 12px 0; font-weight:700;">At a Glance</h2>
+        <div style="display:grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap:10px;">
+          <div style="background:#ffffff; border-radius:8px; padding:12px 12px 10px; box-shadow: 0 1px 2px oklch(0.5 0.05 288 / 0.12);">
+            <div style="font-family:'Space Grotesk', 'Helvetica Neue', Arial, sans-serif; font-size:26px; font-weight:700; line-height:1; color: oklch(0.42 0.18 288);">8+</div>
+            <div style="font-size:12px; line-height:1.3; margin-top:6px; color: oklch(0.42 0.02 275);">Years building software</div>
+          </div>
+          <div style="background:#ffffff; border-radius:8px; padding:12px 12px 10px; box-shadow: 0 1px 2px oklch(0.5 0.05 288 / 0.12);">
+            <div style="font-family:'Space Grotesk', 'Helvetica Neue', Arial, sans-serif; font-size:26px; font-weight:700; line-height:1; color: oklch(0.42 0.18 288);">6+</div>
+            <div style="font-size:12px; line-height:1.3; margin-top:6px; color: oklch(0.42 0.02 275);">Years at Fifthnote</div>
+          </div>
+          <div style="background:#ffffff; border-radius:8px; padding:12px 12px 10px; box-shadow: 0 1px 2px oklch(0.5 0.05 288 / 0.12);">
+            <div style="font-family:'Space Grotesk', 'Helvetica Neue', Arial, sans-serif; font-size:26px; font-weight:700; line-height:1; color: oklch(0.42 0.18 288);">3</div>
+            <div style="font-size:12px; line-height:1.3; margin-top:6px; color: oklch(0.42 0.02 275);">Companies</div>
+          </div>
+          <div style="background:#ffffff; border-radius:8px; padding:12px 12px 10px; box-shadow: 0 1px 2px oklch(0.5 0.05 288 / 0.12);">
+            <div style="font-family:'Space Grotesk', 'Helvetica Neue', Arial, sans-serif; font-size:22px; font-weight:700; line-height:1.1; color: oklch(0.42 0.18 288); white-space:nowrap;">8 → 10</div>
+            <div style="font-size:12px; line-height:1.3; margin-top:5px; color: oklch(0.42 0.02 275);">.NET upgrade work</div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 style="font-size: 12px; text-transform: uppercase; letter-spacing: 1.6px; color: oklch(0.45 0.17 288); margin: 0 0 12px 0; font-weight:700;">Technical Skills</h2>
+
+        <div style="font-size:12px; font-weight:600; color: oklch(0.38 0.03 275); margin-bottom:7px;">Backend</div>
+        <div style="display:flex; flex-wrap:wrap; gap:6px; margin-bottom:14px;">
+          <span style="background: oklch(0.42 0.18 288); color:#ffffff; padding: 4px 9px; border-radius: 5px; font-size: 12.5px; font-weight:500;">.NET 10</span>
+          <span style="background: oklch(0.42 0.18 288); color:#ffffff; padding: 4px 9px; border-radius: 5px; font-size: 12.5px; font-weight:500;">C# .NET</span>
+          <span style="background: oklch(0.42 0.18 288); color:#ffffff; padding: 4px 9px; border-radius: 5px; font-size: 12.5px; font-weight:500;">LINQ</span>
+          <span style="background: oklch(0.42 0.18 288); color:#ffffff; padding: 4px 9px; border-radius: 5px; font-size: 12.5px; font-weight:500;">Entity Framework</span>
+          <span style="background: oklch(0.42 0.18 288); color:#ffffff; padding: 4px 9px; border-radius: 5px; font-size: 12.5px; font-weight:500;">MVC</span>
+          <span style="background: oklch(0.42 0.18 288); color:#ffffff; padding: 4px 9px; border-radius: 5px; font-size: 12.5px; font-weight:500;">Razor Pages</span>
+        </div>
+
+        <div style="font-size:12px; font-weight:600; color: oklch(0.38 0.03 275); margin-bottom:7px;">Workflow &amp; Data</div>
+        <div style="display:flex; flex-wrap:wrap; gap:6px; margin-bottom:14px;">
+          <span style="background: oklch(0.88 0.05 288); color: oklch(0.25 0.06 285); padding: 4px 9px; border-radius: 5px; font-size: 12.5px; font-weight:500;">Temporal</span>
+          <span style="background: oklch(0.88 0.05 288); color: oklch(0.25 0.06 285); padding: 4px 9px; border-radius: 5px; font-size: 12.5px; font-weight:500;">SQL Server</span>
+        </div>
+
+        <div style="font-size:12px; font-weight:600; color: oklch(0.38 0.03 275); margin-bottom:7px;">Frontend</div>
+        <div style="display:flex; flex-wrap:wrap; gap:6px;">
+          <span style="background:#ffffff; border:1px solid oklch(0.85 0.03 288); color: oklch(0.3 0.03 275); padding: 3px 8px; border-radius: 5px; font-size: 12.5px;">HTML</span>
+          <span style="background:#ffffff; border:1px solid oklch(0.85 0.03 288); color: oklch(0.3 0.03 275); padding: 3px 8px; border-radius: 5px; font-size: 12.5px;">CSS</span>
+          <span style="background:#ffffff; border:1px solid oklch(0.85 0.03 288); color: oklch(0.3 0.03 275); padding: 3px 8px; border-radius: 5px; font-size: 12.5px;">Bootstrap</span>
+          <span style="background:#ffffff; border:1px solid oklch(0.85 0.03 288); color: oklch(0.3 0.03 275); padding: 3px 8px; border-radius: 5px; font-size: 12.5px;">JavaScript</span>
+          <span style="background:#ffffff; border:1px solid oklch(0.85 0.03 288); color: oklch(0.3 0.03 275); padding: 3px 8px; border-radius: 5px; font-size: 12.5px;">jQuery</span>
+        </div>
+      </section>
+
+      <section>
+        <h2 style="font-size: 12px; text-transform: uppercase; letter-spacing: 1.6px; color: oklch(0.45 0.17 288); margin: 0 0 12px 0; font-weight:700;">Education</h2>
+        <div style="background:#ffffff; border-radius:8px; padding:14px; box-shadow: 0 1px 2px oklch(0.5 0.05 288 / 0.12);">
+          <h3 style="margin:0; font-family:'Space Grotesk', 'Helvetica Neue', Arial, sans-serif; font-size:15px; line-height:1.3; font-weight:600;">Bachelor of Technology</h3>
+          <div style="font-size:13px; margin-top:2px;">Information Technology</div>
+          <div style="font-size:12.5px; color: oklch(0.45 0.02 275); margin-top:6px;">BGIET, Sangrur, India</div>
+          <div style="display:flex; margin-top:10px;">
+            <span style="background: oklch(0.93 0.03 288); color: oklch(0.35 0.12 288); font-size:12px; font-weight:600; padding:3px 8px; border-radius:4px;">Jul 2015 – May 2018</span>
+          </div>
+        </div>
+      </section>
+
+    </aside>
+
+    <!-- ---------- MAIN ---------- -->
+    <main style="flex:1; min-width:0; padding: 28px 40px 28px 32px; display:flex; flex-direction:column; gap:26px;">
+
+      <!-- Career timeline infographic -->
+      <section>
+        <h2 style="font-size: 12px; text-transform: uppercase; letter-spacing: 1.6px; color: oklch(0.45 0.17 288); margin: 0 0 12px 0; font-weight:700;">Career Timeline</h2>
+        <div role="img" aria-label="Career timeline: B.Tech July 2015 to May 2018; Jaarvis Technologies July 2018 to August 2019; Webner Solutions September 2019 to June 2020; Fifthnote July 2020 to present." style="position:relative; height:94px;">
+
+          <!-- labels above -->
+          <div style="position:absolute; left:29.17%; top:0; font-size:11.5px; font-weight:600; color: oklch(0.38 0.03 275); white-space:nowrap; line-height:16px;">Jaarvis · Junior Web Designer</div>
+          <div style="position:absolute; left:29.17%; top:16px; width:1px; height:6px; background: oklch(0.6 0.03 275);"></div>
+
+          <!-- track -->
+          <div style="position:absolute; left:0; right:0; top:22px; height:30px; border-radius:6px; background: oklch(0.955 0.008 280);"></div>
+
+          <!-- bars -->
+          <div style="position:absolute; left:4.17%; width:calc(24.25% - 3px); top:22px; height:30px; border-radius:6px 2px 2px 6px; background: oklch(0.88 0.05 288); display:flex; align-items:center; padding-left:9px; font-size:11.5px; font-weight:600; color: oklch(0.28 0.08 285); white-space:nowrap; overflow:hidden;">B.Tech IT</div>
+          <div style="position:absolute; left:29.17%; width:calc(9.72% - 3px); top:22px; height:30px; border-radius:2px; background: oklch(0.7 0.06 260);"></div>
+          <div style="position:absolute; left:38.89%; width:calc(6.94% - 3px); top:22px; height:30px; border-radius:2px; background: oklch(0.56 0.15 288);"></div>
+          <div style="position:absolute; left:45.83%; width:53.34%; top:22px; height:30px; border-radius:2px 6px 6px 2px; background: oklch(0.4 0.18 288); display:flex; align-items:center; justify-content:space-between; padding:0 10px; font-size:11.5px; font-weight:600; color:#ffffff; white-space:nowrap; overflow:hidden;">
+            <span>Fifthnote · Software Engineer</span>
+            <span style="display:flex; align-items:center; gap:6px;">6+ yrs <span aria-hidden="true" style="width:7px; height:7px; border-radius:50%; background: oklch(0.88 0.08 150);"></span></span>
+          </div>
+
+          <!-- label below -->
+          <div style="position:absolute; left:38.89%; top:52px; width:1px; height:6px; background: oklch(0.6 0.03 275);"></div>
+          <div style="position:absolute; left:38.89%; top:58px; font-size:11.5px; font-weight:600; color: oklch(0.38 0.03 275); white-space:nowrap; line-height:16px;">Webner · Software Engineer</div>
+
+          <!-- axis -->
+          <div style="position:absolute; left:0; right:0; top:78px; height:16px; font-size:11px; color: oklch(0.47 0.02 275); line-height:16px;">
+            <span style="position:absolute; left:0;">2015</span>
+            <span style="position:absolute; left:16.67%; transform:translateX(-50%);">2017</span>
+            <span style="position:absolute; left:33.33%; transform:translateX(-50%);">2019</span>
+            <span style="position:absolute; left:50%; transform:translateX(-50%);">2021</span>
+            <span style="position:absolute; left:66.67%; transform:translateX(-50%);">2023</span>
+            <span style="position:absolute; left:83.33%; transform:translateX(-50%);">2025</span>
+            <span style="position:absolute; right:0; font-weight:600; color: oklch(0.42 0.17 288);">Now</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Work history -->
+      <section>
+        <h2 style="font-size: 12px; text-transform: uppercase; letter-spacing: 1.6px; color: oklch(0.45 0.17 288); margin: 0 0 12px 0; font-weight:700;">Work History</h2>
+
+        <div style="display:flex; flex-direction:column; gap:16px;">
+
+          <div class="job" style="break-inside: avoid;">
+            <div style="display:flex; justify-content:space-between; align-items:baseline; gap:12px;">
+              <h3 style="font-family:'Space Grotesk', 'Helvetica Neue', Arial, sans-serif; font-size:15.5px; margin:0; font-weight:600;">Software Engineer</h3>
+              <span style="font-size:12px; font-weight:600; color: oklch(0.42 0.17 288); white-space:nowrap;">Jul 2020 – Present</span>
+            </div>
+            <div style="font-size:13px; color: oklch(0.45 0.02 275); font-weight:500; margin-top:1px;">Fifthnote, Mohali</div>
+            <ul>
+              <li>Spearheaded automation project for auto submission of appeal for underpayments using Temporal workflows.</li>
+              <li>Responsible for updating key modules when project was moved from .NET 8 to .NET 10.</li>
+              <li>Worked on redesigning the monolith to microservices to handle scaling of separate parts of the services.</li>
+              <li>Worked on improving performance for various SQL queries and slow endpoints.</li>
+              <li>Participated in implementation and maintenance of back-end features using C# and SQL.</li>
+              <li>Took the initiative to write unit and integration tests, driving coverage to an acceptable benchmark and cutting regression testing time to speed up time to production.</li>
+            </ul>
+          </div>
+
+          <div class="job" style="break-inside: avoid;">
+            <div style="display:flex; justify-content:space-between; align-items:baseline; gap:12px;">
+              <h3 style="font-family:'Space Grotesk', 'Helvetica Neue', Arial, sans-serif; font-size:15.5px; margin:0; font-weight:600;">Software Engineer</h3>
+              <span style="font-size:12px; font-weight:600; color: oklch(0.45 0.02 275); white-space:nowrap;">Sep 2019 – Jun 2020</span>
+            </div>
+            <div style="font-size:13px; color: oklch(0.45 0.02 275); font-weight:500; margin-top:1px;">Webner Solutions Pvt Ltd, Mohali</div>
+            <ul>
+              <li>Worked as backend developer to implement various functionality for editable PDF and export to various formats.</li>
+            </ul>
+          </div>
+
+          <div class="job" style="break-inside: avoid;">
+            <div style="display:flex; justify-content:space-between; align-items:baseline; gap:12px;">
+              <h3 style="font-family:'Space Grotesk', 'Helvetica Neue', Arial, sans-serif; font-size:15.5px; margin:0; font-weight:600;">Junior Web Designer</h3>
+              <span style="font-size:12px; font-weight:600; color: oklch(0.45 0.02 275); white-space:nowrap;">Jul 2018 – Aug 2019</span>
+            </div>
+            <div style="font-size:13px; color: oklch(0.45 0.02 275); font-weight:500; margin-top:1px;">Jaarvis Technologies Pvt Ltd, Mohali</div>
+            <ul>
+              <li>Worked as designer and content creator for various projects.</li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
   </div>
-
-  <section style="margin-bottom: 20px;">
-    <h2 style="font-size: 13px; text-transform: uppercase; letter-spacing: 1.5px; color: oklch(0.5 0.13 250); margin: 0 0 8px 0; display: none">Profile</h2>
-    <p style="margin:0;">Backend-focused software engineer with 8+ years building and scaling .NET systems, from designing microservices and workflow automation to driving performance and test coverage improvements. Comfortable owning problems end-to-end under tight deadlines and collaborating closely with cross-functional teams.</p>
-  </section>
-
-  <section style="margin-bottom: 20px;">
-    
-    <h2 style="font-size: 13px; text-transform: uppercase; letter-spacing: 1.5px; color: oklch(0.5 0.13 250); margin: 0 0 10px 0;">Technical Competencies</h2><div style="display:flex; flex-wrap: wrap; gap: 8px;">
-      <span style="background: oklch(0.92 0.005 260); color: #000000; font-weight: 400; padding: 5px 12px; border-radius: 3px; font-size: 13px;">.NET 10</span>
-      
-      
-      <span style="background: oklch(0.92 0.005 260); padding: 5px 12px; border-radius: 3px; font-size: 13px;">C# .NET</span><span style="background: oklch(0.92 0.005 260); padding: 5px 12px; border-radius: 3px; font-size: 13px;">LINQ</span>
-      <span style="background: oklch(0.92 0.005 260); padding: 5px 12px; border-radius: 3px; font-size: 13px;">Entity Framework</span>
-      <span style="background: oklch(0.92 0.005 260); padding: 5px 12px; border-radius: 3px; font-size: 13px;">MVC</span>
-      <span style="background: oklch(0.92 0.005 260); color: #000000; font-weight: 400; padding: 5px 12px; border-radius: 3px; font-size: 13px;">Temporal</span><span style="background: oklch(0.92 0.005 260); padding: 5px 12px; border-radius: 3px; font-size: 13px;">Razor Pages<br></span><span style="background: oklch(0.92 0.005 260); padding: 5px 12px; border-radius: 3px; font-size: 13px;">SQL Server</span>
-      <span style="background: oklch(0.92 0.005 260); padding: 5px 12px; border-radius: 3px; font-size: 13px;">HTML</span>
-      <span style="background: oklch(0.92 0.005 260); padding: 5px 12px; border-radius: 3px; font-size: 13px;">CSS</span>
-      <span style="background: oklch(0.92 0.005 260); padding: 5px 12px; border-radius: 3px; font-size: 13px;">Bootstrap</span>
-      <span style="background: oklch(0.92 0.005 260); padding: 5px 12px; border-radius: 3px; font-size: 13px;">JavaScript</span>
-      <span style="background: oklch(0.92 0.005 260); padding: 5px 12px; border-radius: 3px; font-size: 13px;">jQuery</span>
-    </div>
-  </section>
-
-  <section style="margin-bottom: 20px;">
-    <h2 style="font-size: 13px; text-transform: uppercase; letter-spacing: 1.5px; color: oklch(0.5 0.13 250); margin: 0 0 10px 0;">Work History</h2>
-
-    <div style="margin-bottom: 14px; break-inside: avoid;">
-      <div style="display:flex; justify-content:space-between; align-items:baseline;">
-        <h3 style="font-size:15px; margin:0; font-weight:700;">Software Engineer — Fifthnote, Mohali</h3>
-        <span style="font-size:12.5px; color: oklch(0.5 0.01 260); white-space:nowrap;">2020-07 – Current</span>
-      </div>
-      <ul style="margin: 6px 0 0 0; padding-left: 18px;">
-        <li>Spearheaded automation project for auto submission of appeal for underpayments using Temporal workflows.</li><li>Responsible for updating key modules when project was moved from .NET 8 to .NET 10.</li>
-        <li>Worked on redesigning the monolith to microservices to handle scaling of separate parts of the services.</li>
-        <li>Worked on improving performance for various SQL queries and slow endpoints.</li><li>Participated in implementation and maintenance of back-end features using C# and SQL.</li>
-        <li>Took the initiative to write unit and integration tests, driving coverage to an acceptable benchmark and cutting regression testing time to speed up time to production.</li>
-        
-        
-        
-        
-      </ul>
-    </div>
-
-    <div style="margin-bottom: 14px; break-inside: avoid;">
-      <div style="display:flex; justify-content:space-between; align-items:baseline;">
-        <h3 style="font-size:15px; margin:0; font-weight:700;">Software Engineer — Webner Solutions Pvt Ltd, Mohali</h3>
-        <span style="font-size:12.5px; color: oklch(0.5 0.01 260); white-space:nowrap;">2019-09 – 2020-06</span>
-      </div>
-      <ul style="margin: 6px 0 0 0; padding-left: 18px;">
-        <li>Worked as backend developer to implement various functionality for editable PDF and export to various formats.</li>
-      </ul>
-    </div>
-
-    <div style="margin-bottom: 0; break-inside: avoid;">
-      <div style="display:flex; justify-content:space-between; align-items:baseline;">
-        <h3 style="font-size:15px; margin:0; font-weight:700;">Junior Web Designer — Jaarvis Technologies Pvt Ltd, Mohali</h3>
-        <span style="font-size:12.5px; color: oklch(0.5 0.01 260); white-space:nowrap;">2018-07 – 2019-08</span>
-      </div>
-      <ul style="margin: 6px 0 0 0; padding-left: 18px;">
-        <li>Worked as designer and content creator for various projects.</li>
-      </ul>
-    </div>
-  </section>
-
-  <section style="break-inside: avoid;">
-    <h2 style="font-size: 13px; text-transform: uppercase; letter-spacing: 1.5px; color: oklch(0.5 0.13 250); margin: 0 0 8px 0;">Education</h2>
-    <div style="display:flex; justify-content:space-between; align-items:baseline;">
-      <h3 style="font-size:15px; margin:0; font-weight:700;">Bachelor of Technology: Information Technology — BGIET, Sangrur, India</h3>
-      <span style="font-size:12.5px; color: oklch(0.5 0.01 260); white-space:nowrap;">2015-07 – 2018-05</span>
-    </div>
-  </section>
+</div>
 
 </doc-page>
 
